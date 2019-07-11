@@ -5,3 +5,6 @@ The side nav bar is ugly, but I don't really have enough sections to make it loo
 If I coud have all the tests pass, I would have focused on making a normal looking navbar that would
 be fixed to the top of the page instead.  
 Passed all FCC tests.  
+
+Link to my code pen where I submitted this project:  
+https://codepen.io/emoryisahare/#
