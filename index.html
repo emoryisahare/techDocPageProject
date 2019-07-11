@@ -1,0 +1,98 @@
+<!--NOTE: When running the testing script, media query test fails
+	This same code passes on my codepen.io page and was submitted 7.10.19-->
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>A Guide to Video Game Emulation</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+	<nav id="navbar">
+		<header>A Guide to Video Game Emulation	</header>
+		<ul>
+			<li>
+				<section><a href="#Introduction_to_Emulators" class="nav-link">Introduction to Emulators</section></a>
+			</li>
+			<li>
+				<section><a href="#Emulators" class="nav-link">Emulators</section></a>
+			</li>
+			<li>
+				<section><a href="#ROMs_and_ISOs" class="nav-link">ROMs and ISOs</section></a>
+			</li>
+			<li>
+				<section><a href="#Tools_Needed" class="nav-link">Tools Needed</section></a>
+			</li>
+			<li>
+				<section><a href="#Legality" class="nav-link">Legality</section></a>
+			</li>
+		</ul>
+	</nav>
+	<main id="main-doc">
+		<section class="main-section"  id="Introduction_to_Emulators">
+			<header>Introduction to Emulators</header>
+			<p>"A video game console emulator is a type of emulator that allows a computing device to emulate a video game console's hardware and play its games on the emulating platform" (via <a href="https://en.wikipedia.org/wiki/Video_game_console_emulator">Wikipedia</a>).
+			</p>
+		</section>
+		<section class="main-section" id="Emulators">
+			<header>Emulators</header>
+			<p>Emulators act as an artificial videogame console on your computer or other devices. They allow you play retro games that you may not be able to buy any longer or are unavailable on digital platforms. 
+			</p>
+			<p>Emulators will often give you more than just the ability to play older games, but they will also allow you have a more customizable experience. Most modern emulators are equipped with things like upscaling the resolution of the game, changing sound options, anti-aliasing, shaders, wide-screen hacks, cheats, and more.</p>
+			<p>Some emulators require you to have a BIOS from your original console to prevent piracy.</p>
+			<p>You will typically want to save your ROMs and ISOs to their own folder based on the emulator you are using. This way you will be able to easily load the ROM or ISO. From here you will be able to play the games using a keyboard or other input device, such as a controller or joy-stick</p>
+		</section>
+		<section class="main-section" id="ROMs_and_ISOs">
+			<header>ROMs and ISOs</header>
+			<p>Emulators take different file types when it comes to playing games. The two most common types are ROMs and ISOs. ROMs and ISOs are rips / copies of a game. Anyone can rip a ROM or ISO if they own the game / have the appropriate tools. 
+			</p>
+			<p>Later in this seciton I will use examples of different rom / iso compatability with an emulator. It will be written in pseudocode (i.e. <code>var emulatorType = game.rom or game.iso;</code>)
+			</p>
+			<p>Most cartridge based consoles will use ROM files, while disc based systems will use ISO files.</p>
+			<ul>
+				<li>A Nintendo Gameboy Advance Emulator uses ROM Files<br>
+					<code>
+						var gbaGame = pokemon_ruby.rom;
+					</code>
+				</li>
+				<li>An N64 Emulator uses ROM Files<br>
+					<code>
+						var n64Game = glover.rom;
+					</code>
+				</li>
+				<li>A PS2 Emulator uses ISO Files<br>
+					<code>
+						var ps2Game = dragon_quest_viii.iso;
+					</code>
+				</li>
+				<li>A GameCube Emulator uses ISO Files<br>
+					<code>
+						var gcGame = Legend_of_Zelda_Wind_Waker.iso;
+					</code>
+				</li>
+			</ul>
+		</section>
+		<section class="main-section" id="Tools_Needed">
+			<header>Tools Needed</header>
+			<p>In order to get started emulating your favorite games you will first need a few tools:
+			</p>
+			<ul>
+				<li>The Emulator for the Console you want to Emulate</li>
+				<li>A File Extraction Program (7-Zip, WinZip, etc.)</li>
+				<li>A physical copy of the game you own that you want to be emulated</li>
+				<li>A DVD drive or a Game Ripping Device (Retrode, etc.)</li>
+			</ul>
+		</section>
+		<section class="main-section"  id="Legality">
+			<header>Legality</header>
+			<p>I am not a a lawyer, but if you would like specifics you should check out the Digital Millennium Copyright Act. Firstly, it IS ILLEGAL to download any ROMs or ISOs of a game. If you are using games that you own and and are cataloging, backing up, or something like that then that is most likely fine. For more information see an example of Nintendo's legal Information about roms click <a href ="https://www.nintendo.com/corp/legal.jsp#roms" target="_blank">here</a>.
+			</p>
+		</section>
+	</main>
+
+<!--Java Script Testing-->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
